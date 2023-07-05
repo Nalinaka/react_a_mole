@@ -4,8 +4,8 @@
 import {useEffect} from 'react'
 import moleImg from './public/mole.png'
 
-
 function Mole(props){
+
     useEffect(() => {
         // Feel free to adjust this number as you see fit.
         // It is your game to tune!
