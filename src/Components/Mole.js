@@ -2,7 +2,7 @@
 // import { useState } from 'react'
 // import MoleContainer from './Mole'
 import {useEffect} from 'react'
-import moleImg from './public/mole.png'
+import moleImg from './mole.png'
 
 function Mole(props){
 
@@ -11,7 +11,7 @@ function Mole(props){
         // It is your game to tune!
         let randSeconds = Math.ceil(Math.random() * 5000)
         let timer = setTimeout(() => {
-            props.setDisplayMole(false)
+            props.toggle(false)
         }, randSeconds)
         return () => clearTimeout(timer)
     })
